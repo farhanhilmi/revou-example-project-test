@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Example #Capstone</h2>
+  <hr>
+
+  <section class="charts">
+    <div class="card">
+      <canvas id="myChart"></canvas>
+    </div>
+  </section>
+
+  <hr>
+  <section>
+    <input type="text" placeholder="search here..." id="table-search-input">
+    <table id="product-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th id="sort-price">Price <span id="sort-icon">&#x25B2;</span></th>
+          <th>Qty</th>
+        </tr>
+      </thead>
+
+      <tbody id="table-body">
+        
+      </tbody>
+      
+
+    </table>
+    <div id="pagination"></div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="pagination.js"></script>
+  <script src="charts.js"></script>
+</body>
+
+</html>
